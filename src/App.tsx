@@ -11,6 +11,7 @@ import ExperienceDetail from "./pages/ExperienceDetail";
 import Bookings from "./pages/Bookings";
 import NotFound from "./pages/NotFound";
 import Dashboard from "./pages/Dashboard";
+import Profile from "./pages/Profile";
 
 const queryClient = new QueryClient();
 
@@ -65,11 +66,10 @@ const App = () => (
             path="/profile" 
             element={
               <Layout>
-                <NotFound />
-              </Layout>
+              <Profile />              </Layout>
             } 
           />
-          <Route 
+          <RouteProfile
             path="*" 
             element={
               <Layout>
