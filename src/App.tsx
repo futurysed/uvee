@@ -69,8 +69,7 @@ const App = () => (
               <Profile />              </Layout>
             } 
           />
-          <RouteProfile
-            path="*" 
+            <Route            path="*" 
             element={
               <Layout>
                 <NotFound />
